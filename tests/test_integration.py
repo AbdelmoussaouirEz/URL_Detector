@@ -45,7 +45,7 @@ class TestAPIEndpoints:
         # Check response structure - should have risk_score, not safety_score
         assert "url" in data
         assert "risk_score" in data
-        assert "safety_score" not in data  # Ensure old field is gone
+        assert "safety_score" not in data  
         assert "risk_level" in data
         assert "is_safe" in data
         assert "checks" in data
