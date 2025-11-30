@@ -334,7 +334,7 @@ async def predict_url(request: URLRequest):
 if __name__ == "__main__":
     uvicorn.run(
         app, 
-        host="0.0.0.0", 
+        host="localhost", 
         port=8000,
         log_level="info"
     )
